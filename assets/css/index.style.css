@@ -1,0 +1,220 @@
+header{
+    height: 75px;
+    border-top-width: 3px;
+    display: flex;
+    flex-direction: column;
+}
+header > .header-border{
+    height: 3px;
+    background: rgb(75,175,71);
+    background: linear-gradient(90deg, rgba(75,175,71,1) 26%, rgba(197,206,56,1) 100%);
+}
+.header-wrap{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-wrap > .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100%;
+}
+.header-wrap > .logo-container > a > img{
+    height: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.upper-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    gap: 15px;
+}
+.contact-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    gap: 10px
+}
+.contact-card img{
+    height: 30px;
+}
+.contact-card span{
+    font-size: 10px;
+    color: rgb(97, 97, 97);
+}
+.contact-card p{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(41, 41, 41);
+}
+.contact-line{
+    width: 1px;
+    height: 50px;
+    background-color: rgb(219, 219, 219);
+}
+
+/*  ripped-paper */
+article {
+    background: white;
+    width: 100%;
+    position: relative;
+    user-select: none;
+}
+article::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 55px;
+    width: 100%;
+    left: 0;
+    background: url('../img/ripped-paper.svg') bottom;
+    background-size: 40%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.13));
+}
+
+/* ================== navbar style ================ */
+.nav-bar{
+    position: relative;
+    z-index: 2;
+    height: 40px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #868686;
+    transition: 0.3s;
+}
+.on{
+    color: black;
+    font-weight: 800;
+}
+.nav-link:hover{
+    color: black;
+}
+
+/* =============== main content ================ */
+.main{
+    height: 520px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0)),
+    url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-content{
+    /* background-color: blue; */
+    width: 70%;
+    height: 400px;
+    margin-top: 70px;
+}
+.main-content > h3{
+    font-family: "Manrope", sans-serif;
+    color: #cacaca;
+    font-size: 10px;
+    font-weight: 500;
+}
+.main-content h1{
+    font-family: 'Covered by your grace';
+    font-weight: 500;
+    color: #FFF;
+    font-size: 75px;
+    line-height: 75px;
+    margin-top: 10px;
+}
+.main-content h1 > span{
+    color: #EEC044;
+}
+.main-content p{
+    font-size: 16px;
+    color: #dfdfdf;
+    font-family: 'Manrope', sans-serif;
+    width: 450px;
+}
+.btn-know-wrap{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+}
+.btn-know-wrap button{
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4baf47;
+    cursor: pointer;
+    color: #FFF;
+    transition: 0.2s all;
+}
+.btn-know-wrap button:hover{
+    background-color: #347531;
+}
+.btn-know-wrap img{
+    height: 40px;
+}
+.card-info-wrap{
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-info{
+    width: 280px;
+    height: 220px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.384);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-info span{
+    font-family: 'Covered by Your Grace', Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    color: #EEC044;
+}
+
+.card-info h2{
+    text-align: center;
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #000;
+    font-size: 16px
+}
+.card-info .img-card-wrap{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+}
+/* ----------------------- */
