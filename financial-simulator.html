@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoyTech Solutions | Simulador de Produtividade</title>
+    <link rel="stylesheet" href="./assets/css/financial-calculator.style.css">
+    <link rel="stylesheet" href="./assets/css/global.style.css">
+    <script src="./assets/js/index.script.js" defer></script>
+    <script src="https://kit.fontawesome.com/c32b893528.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-border"></div>
+        <div class="header-wrap">
+            <div class="logo-container">
+                <a href="#">
+                    <img src="./assets/icon/logo.png" draggable="false"/>
+                </a>
+            </div>
+            <div class="upper-nav">
+                <div class="contact-card">
+                    <img src="https://img.icons8.com/ios/50/4baf47/ringer-volume.png" alt="ringer-volume"/>
+                    <div class="contact-card-info">
+                        <span>Ligue para</span>
+                        <p>+55 11940028922</p>
+                    </div>
+                </div>
+                <div class="contact-line"></div>
+                <div class="contact-card">
+                    <img src="https://img.icons8.com/ios/50/4baf47/envelope-dots.png" alt="envelope-dots"/>                    <div class="contact-card-info">
+                        <span>Mensagem para</span>
+                        <p>soytech@solutions.com</p>
+                    </div>
+                </div>
+                <div class="contact-line"></div>
+                <div class="contact-card">
+                    <img src="https://img.icons8.com/ios/50/4baf47/place-marker--v1.png" alt="place-marker--v1"/>                    <div class="contact-card-info">
+                        <span>965, Haddock Lobo</span>
+                        <p>Av Paulista, São Paulo SP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+
+    </article>
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-items"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-items"><a href="#" class="nav-link">Sobre nós</a></li>
+            <li class="nav-items"><a href="#" class="nav-link">Serviços</a></li>
+            <li class="nav-items"><a href="#" class="nav-link">Solução</a></li>
+            <li class="nav-items"><a href="#" class="nav-link on">Rentabilidade</a></li>
+            <li class="nav-items"><a href="#" class="nav-link">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="card-container">
+            <h1 class="calculator-title">Produtividade x Perdas<span>(kg/ha-1)</span></h1>
+            <form>
+                <div class="row  input-row">
+                    <div class="col input-col">
+                        <label class="lbl-question">Hectares totais:</label>
+                        <input type="number" id="txt_qtdHectare" class="input-question">
+                    </div>
+                    <div class="col input-col">
+                        <label class="lbl-question">Plantas por m² (média):</label>
+                        <input type="number" id="txt_qtdPlantaMq" class="input-question">
+                    </div>
+                </div>
+                <div class="row input-row">
+                    <div class="col input-col">
+                        <label class="lbl-question">Vagens por planta (média):</label>
+                        <input type="Number" id="txt_qtdVagemPlanta" class="input-question">
+                    </div>
+                    <div class="col input-col">
+                        <label class="lbl-question">Grãos por vagem (média):</label>
+                        <input type="number" id="txt_graoVagem" class="input-question">
+                    </div>
+                </div>
+                <div class="row input-row">
+                    <div class="col input-col">
+                        <label class="lbl-question">Peso em 100 grãos(média):</label>
+                        <input type="Number" id="txt_peso100graos" class="input-question">
+                    </div>
+                    <div class="col input-col">
+                        <label class="lbl-question">Preço por sacas em Reais (60kg):</label>
+                        <input type="number" id="txt_precoSacas" class="input-question">
+                    </div>
+                </div>
+                <div class="row input-row">
+                    <div class="col input-col">
+                        <label class="lbl-question">Umidade de Produção (%):</label>
+                        <input type="number" id="txt_qtdUmidadePercentual" class="input-question" placeholder="opicional*">
+                    </div>
+                    <div class="col input-col">
+                        <label class="lbl-question">Temperatura de Produção(C°):</label>
+                        <input type="number" id="txt_temperaturaCelcius" class="input-question" placeholder="opicional*">
+                    </div>
+                </div>
+
+                <button type="button" id="btn_produtividade" class="btn-default btn-calculator">CALCULAR PRODUTIVIDADE <i class="fa-solid fa-chart-simple"></i></button>
+            </form>
+        </div>
+    </main>
+    <section class="response-container">
+        <h4 class="response-subtitle">Rentabilidade</h4>
+        <h1 class="response-title">Simulador Financeiro</h1>
+        <p class="response-subtext">
+            Nossa ferramenta de "Simulador de Produtividade" oferece a você uma visão detalhada do seu potencial rendimento, para que você possa entender como pequenas melhoras na sua produção podem implicar em relevantes melhorias e um alto rendimento
+            <br>
+            <br>
+            Caso você não tenha atividade de termometria na sua produção, nossa equipe irá considerar parâmetros médios de produção SEM termometria
+            <br>
+            Se você ja possui a termometria, não se preocupe, nós também temos a solução para você. Nos informe os dados da umidade e temperatura que foi coletada na sua ultima medição da produção, para que possamos realizar de forma precisa os sua potencial produtividade, tornando o processo de produção mais eficiente, super tecnológico e de forma automatizada ;)
+            <br>
+            <br>
+            <span>Experimente agora e descubra como pequenos ajustes podem resultar em grandes ganhos na sua produção de soja!</span>
+            
+        </p>
+        <div class="data-analysis">
+
+        </div>
+    </section>
+    <footer class="footer-container">
+        <!-- empty -->
+    </footer>
+
+    <div class="modal-loader">
+        <div class="modal-content-loader">
+            <div class="custom-loader"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
