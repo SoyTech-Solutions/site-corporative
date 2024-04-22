@@ -1,0 +1,120 @@
+.integracao-container{
+    height: 1000px;
+    width: 100%;
+    padding-top: 70px;
+    background-color: #F8F7F1;
+    padding-bottom: 30px;
+}
+.inner-integracao{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.first-integracao, .second-integracao{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+.second-integracao{
+    height: 500px;
+}
+.left-first{
+    width: 40%;
+    height: 100%;
+}
+
+.left-first h2{
+    text-align: start;
+}
+
+.left-first h1{
+    height: 70px;
+    width: 90%;
+    background-color: #fff;
+}
+
+.left-first p{
+    width: 90%;
+    height: 220px;
+    word-wrap: break-word;
+    background-color: pink;
+    margin-bottom: 15px;
+}
+.left-first a{
+    text-decoration: none;
+    border-radius: 6px;
+    color: #FFF;
+    padding: 15px 40px;
+    background-color: green;
+}
+.right-first{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-first-img{
+    height: 98%;
+    width: 98%;
+    border-radius: 8px;
+    background-color: rgb(224, 224, 224);
+}
+.left-second{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-second-img{
+    width: 98%;
+    height: 98%;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+}
+.right-second{
+    width: 40%;
+    height: 100%;
+}
+.right-second h1{
+    height: 60px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #FFF;
+}
+.right-second >p{
+    background-color: pink;
+    height: 155px;
+}
+.selo-container{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+}
+.inner-selo{
+    width: 100%;
+    height: 80px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+}
+.left-selo{
+    width: 80px;
+    height: 80px;
+    background-color: brown;
+}
+.right-selo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+}

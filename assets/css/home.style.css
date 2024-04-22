@@ -186,6 +186,8 @@ article::after {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 .card-info{
     width: 280px;

@@ -1,0 +1,92 @@
+.contato-container{
+    width: 100%;
+    height: 770px;
+    padding-top: 20px;
+    background-color: #F8F7F1;
+}
+.inner-contato{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+.top-contato{
+    background-color: aqua;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+}
+.left-contato, .right-contato{
+    width: 50%;
+    height: 100%;
+}
+.left-contato{
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-contato{
+    width: 98%;
+    height: 98%;
+    background-color: gray;
+    border-radius: 8px;
+}
+.right-contato{
+    background-color: pink;
+}
+.right-contato h2{
+    text-align: start;
+}
+.right-contato h1{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+}
+.right-contato form{
+    width: 100%;
+    flex: 1;
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.row-contato{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+}
+.row-contato:nth-child(3){
+    height: 220px;
+}
+.row-contato input{
+    width: 50%;
+}
+.row-contato textarea{
+    width: 100%;
+}
+.bottom-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.card-contato{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(238, 255, 0);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-contato:nth-child(1){
+    background-color: green;
+}
+.info-card-contato{
+    width: 80%;
+    background-color: red;
+}
