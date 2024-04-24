@@ -41,7 +41,7 @@
 }
 .right-contato h2{
     font-weight: lighter;
-    color: #EEC144;
+    color: #44ee60;
     font-family: 'Covered By Your Grace';
     text-align: start;
 }
@@ -98,6 +98,11 @@ button, .btn-contato{
     cursor: pointer;
 
 }
+
+.btn-contato button:hover{
+    background-color: #347531;
+}
+
 .bottom-contato{
     display: flex;
     flex-direction: row;
