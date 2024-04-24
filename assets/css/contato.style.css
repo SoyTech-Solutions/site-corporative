@@ -149,7 +149,7 @@ button, .btn-contato{
 .card-contato{
     width: 300px;
     height: 200px;
-    background-color: #EEC144; 
+    background-color: #ffbb00; 
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -157,11 +157,11 @@ button, .btn-contato{
     flex-direction: column;
 }
 .card-contato:nth-child(1){
-    background-color: #4AAF47;
+    background-color: #056b00;
 }
 
 .card-contato:nth-child(2){
-    background-color: #C5CD39;
+    background-color: #a0a900;
 }
 .info-card-contato{
     line-height: 20px;
