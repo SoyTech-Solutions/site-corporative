@@ -11,7 +11,7 @@
 .inner-servicos > h2{
     font-family: 'Covered by Your Grace', Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
-    color: #EEC044;
+    color: rgb(75,175,71);
     text-align: center;
 }
 .inner-servicos > h1{
@@ -31,11 +31,35 @@
 .servicos-card{
     width: 220px;
     height: 350px;
-    background-color: red;
+    /* background-color: red; */
     border-radius: 10px;
     position: relative;
     display: flex;
     justify-content: center;
+}
+.servicos-card:nth-child(1){
+    background-image: url(../img/img-monitoramento.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #DFDFDF;
+}
+.servicos-card:nth-child(2){
+    background-image: url(../img/img-dados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #DFDFDF;
+}
+.servicos-card:nth-child(3){
+    background-image: url(../img/img-gestao.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #DFDFDF;
+}
+.servicos-card:nth-child(4){
+    background-image: url(../img/img-armazenamento.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #DFDFDF;
 }
 .inner-servicos-card{
     width: 180px;
@@ -58,7 +82,7 @@
 .inner-info-card-servicos{
     width: 100%;
     height: 100px;
-    background-color: orange;
+    background-color: white;
     position: absolute;
     bottom: 0;
     border-radius: 7px;
@@ -66,7 +90,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .inner-info-card-servicos > h2{
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
@@ -77,8 +100,13 @@
 .referencia-container{
     width: 100%;
     height: 500px;
-    background-color: brown;
+    /* background-color: brown; */
     margin-top: 5%;
+
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)),
+    url('../img/background-inspira.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .inner-referencia{
     width: 70%;
@@ -90,17 +118,21 @@
 .inner-referencia .titulo-wrapper{
     position: absolute;
     margin: -80px auto 0 auto;
-    background-color: green;
+    background-color: #087204;
     height: 150px;
     width: 100%;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFF;
+    color: #DFDFDF;
+    font-family: 'Manrope', sans-serif;
+}
+.titulo-wrapper > h1{
+    font-size: 40px;
 }
 .inner-referencia > .video-container{
-    background-color: orange;
+    /* background-color: orange; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -109,11 +141,21 @@
 .left-video, .right-video{
     width: 50%;
     height: 100%;
-    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
 }
-.left-video{
+/* .left-video{
     background-color: pink;
-}
+} */
 .left-video h1{
-    margin-top: 200px;
+    font-family: 'Manrope', sans-serif;
+    color: #DFDFDF;
+    font-size: 40px;
+}
+.right-video iframe{
+    width: 451px; 
+    height: 255px;
+    border: none;
 }
