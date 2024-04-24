@@ -1,7 +1,7 @@
 .footer-container{
     width: 100%;
     height: 350px;
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(17, 17, 17);
 }
 .footer-container ul{
     list-style: NONE;
@@ -13,25 +13,39 @@
     display: flex;
     flex-direction: row;
 }
+.inner-card p{
+    width: 260px;
+}
+.social-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-card img{
+    
+}
 .footer-card:nth-child(1){
     padding-top: 50px;
     width: 30%;
     height: 100%;
 }
 .footer-card:nth-child(1) .inner-card{
-    background-color: blue;
+    color: gray;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
     width: 100%;
     height: 300px;
 }
 .logo-footer{
     width: 100%;
     height: 70px;
-    background-color: gray;
+}
+.logo-footer img{
+    width: 90%;
 }
 .social-footer{
     width: 100%;
     height: 50px;
-    background-color: red;
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -94,8 +108,12 @@
 
 .copy-container{
     width: 100%;
-    height: 60px;
-    background-color: black;
+    height: 55px;
+    background-color: rgb(7, 7, 7);
+}
+.copy-container{
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 .inner-copy{
     width: 70%;
@@ -107,7 +125,7 @@
     align-items: center;
     color: #fff;
 }
-.inner-copy a{
+.inner-copy span, .inner-copy a{
     text-decoration: none;
-    color: white;
+    color: rgb(107, 107, 107);
 }
