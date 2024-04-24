@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Covered+By+Your+Grace&family=Nabla&display=swap');
+
+
 .integracao-container{
     height: 1000px;
     width: 100%;
@@ -60,6 +63,7 @@
     color: #FFF;
     padding: 15px 40px;
     background-color: green;
+    font-family: 'Azeret Mono';
 }
 .right-first{
     width: 60%;
@@ -94,6 +98,13 @@
     background-color: rgb(224, 224, 224);
     border-radius: 10px;
 }
+
+.SecondImgIntegracao{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
 .right-second{
     width: 40%;
     height: 100%;
