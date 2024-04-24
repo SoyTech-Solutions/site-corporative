@@ -46,8 +46,10 @@
 .left-first h3{
     font-family: 'Covered by Your Grace', 'Arial', 'Helvetica', 'sans-serif';
     margin-bottom: 15px;
-    color: #EEC044;
-    /* text-align: left; */
+    color: rgb(75,175,71);
+    font-family: 'Covered By Your Grace';
+    font-weight: lighter;
+    text-align: start;
 }
 
 .left-first p{
@@ -62,9 +64,17 @@
     border-radius: 6px;
     color: #FFF;
     padding: 15px 40px;
-    background-color: green;
+    background-color: #4baf47;
     font-family: 'Azeret Mono';
+    transition: 0.3s all;
 }
+
+.left-first a:hover{
+    background-color: #347531;
+}
+
+
+
 .right-first{
     width: 60%;
     height: 100%;

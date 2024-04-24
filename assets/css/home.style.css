@@ -202,7 +202,7 @@ article::after {
 .card-info span{
     font-family: 'Covered by Your Grace', Arial, Helvetica, sans-serif;
     margin-top: 15px;
-    color: #44ee60;
+    color: rgb(75,175,71);
 }
 
 .card-info h2{

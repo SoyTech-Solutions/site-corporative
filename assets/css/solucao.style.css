@@ -9,8 +9,16 @@
     height: 100%;
     margin: 0 auto;
 }
-.inner-solucao > h1, h2{
+
+.inner-solucao > h2 {
     text-align: center;
+    font-family: 'Covered by Your Grace', Arial, Helvetica, sans-serif;
+    color: rgb(75,175,71);
+}
+.inner-solucao > h1 {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 40px;
 }
 .solucao-card-container{
     width: 100%;
