@@ -12,18 +12,11 @@
     margin: 0 auto;
 }
 
-.inner-solucao > h2 {
-    text-align: center;
+.inner-solucao h2 {
+    text-align: center; 
     font-family: 'Covered by Your Grace', Arial, Helvetica, sans-serif;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    color: #087204;
-=======
->>>>>>> 69b99f90d4f51fd16201fbdfc3bb50a834537aed
-=======
-    color: rgb(75,175,71);
-    font-weight: 500;
->>>>>>> 36efa989243eff56497a550aa536e9dd0038e505
+    
+
 }
 .inner-solucao > h1 {
     text-align: center;
@@ -42,7 +35,7 @@
 .solucao-card{
     width: 220px;
     height: 350px;
-    background-color: rgb(0, 0, 0);
+    
     border-radius: 10px;
     position: relative;
     display: flex;
