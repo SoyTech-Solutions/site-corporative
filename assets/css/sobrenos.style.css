@@ -18,6 +18,7 @@
     width: 50%;
     height: 100%;
 }
+
 .left-sobrenos{
     height: 500px;
     width: 500px;
@@ -49,6 +50,7 @@
     bottom: 0;
     right: 20px;
     border: 10px solid #FFF;
+ 
 }
 .right-sobrenos > h2{
     text-align: start;
