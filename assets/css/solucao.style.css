@@ -13,11 +13,7 @@
 .inner-solucao > h2 {
     text-align: center;
     font-family: 'Covered by Your Grace', Arial, Helvetica, sans-serif;
-<<<<<<< HEAD
     color: #087204;
-=======
-    color: rgb(75,175,71);
->>>>>>> 610af080aef58db2b8bc32d5ee23a27bc35049da
 }
 .inner-solucao > h1 {
     text-align: center;
@@ -42,6 +38,7 @@
     justify-content: center;
     object-fit: cover;
 }
+
 .inner-solucao-card{
     width: 190px;
     height: 70px;
