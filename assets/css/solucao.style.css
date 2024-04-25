@@ -13,12 +13,18 @@
 .inner-solucao > h2 {
     text-align: center;
     font-family: 'Covered by Your Grace', Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
     color: #087204;
+=======
+    color: rgb(75,175,71);
+    font-weight: 500;
+>>>>>>> 36efa989243eff56497a550aa536e9dd0038e505
 }
 .inner-solucao > h1 {
     text-align: center;
-    font-family: 'Manrope', sans-serif;
-    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
 }
 .solucao-card-container{
     width: 100%;
