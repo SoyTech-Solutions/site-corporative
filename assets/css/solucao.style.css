@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Covered+By+Your+Grace&family=Nabla&display=swap');
+
 .solucao-container{
     height: 580px;
     width: 100%;
@@ -14,7 +16,10 @@
     text-align: center;
     font-family: 'Covered by Your Grace', Arial, Helvetica, sans-serif;
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: #087204;
+=======
+>>>>>>> 69b99f90d4f51fd16201fbdfc3bb50a834537aed
 =======
     color: rgb(75,175,71);
     font-weight: 500;
