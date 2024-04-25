@@ -89,7 +89,8 @@
     height: 98%;
     width: 98%;
     border-radius: 8px;
-    background-color: rgb(224, 224, 224);
+    background-color: rgba(224, 224, 224, 0);
+    margin-top: -20%;
 }
 
 .imgIntegracao{

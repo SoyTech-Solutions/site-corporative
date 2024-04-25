@@ -15,7 +15,8 @@
 .inner-solucao h2 {
     text-align: center; 
     font-family: 'Covered by Your Grace', Arial, Helvetica, sans-serif;
-    color: #087204;
+    color: rgb(75,175,71);
+    font-weight: 500;
 }
 .inner-solucao > h1 {
     text-align: center;
