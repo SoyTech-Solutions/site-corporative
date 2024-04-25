@@ -217,6 +217,22 @@ article::after {
     width: 100px;
     margin-top: 10px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.247);
 }
 /* ----------------------- */
+.card-wrap-1{
+    background-image: url('../img/card1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-wrap-2{    
+    background-image: url('../img/card2-vagabundo.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-wrap-3{
+    background-image: url('../img/card3.png');
+    background-size: cover;
+    background-position: center;
+}
