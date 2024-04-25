@@ -120,7 +120,8 @@
 }
 
 #soytech{
-    margin: 20px 0 10px 20px;
+    margin: 20px 0 10px 00px;
+    padding-left: 20px;
     font-size: 25px;
     display: flex;
     align-self: flex-start;
@@ -131,8 +132,9 @@
 }
 
 #contato{
-    margin: 20px 0 10px 20px;
+    margin: 20px 0 10px 0px;
     font-size: 25px;
+    padding-left: 20px;
     display: flex;
     align-self: flex-start;
     justify-self: flex-start;
@@ -142,8 +144,9 @@
 }
 
 #endereco{
-    margin: 20px 0 10px 20px;
+    margin: 20px 0 10px 0px;
     font-size: 25px;
+    padding-left: 20px;
     display: flex;
     align-self: flex-start;
     justify-self: flex-start;
