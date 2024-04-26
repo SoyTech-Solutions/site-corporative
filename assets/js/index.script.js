@@ -189,32 +189,27 @@ btnProductivity.addEventListener('click', function(){
                         <tr>
                             <td><b>Monitoramento remoto da plantação</b></td>
                             <td>Acesso em tempo real às condições de umidade e temperatura da plantação de soja, permitindo uma gestão eficiente mesmo à distância.</td>
-                            <td><span class="green-text">R$${data}/ha</span></td>
-                        </tr>
-                        <tr>
-                            <td><b>Otimização da irrigação</b></td>
-                            <td>Com dados precisos sobre a umidade do solo, os agricultores podem ajustar o sistema de irrigação para garantir a quantidade certa de água para as plantas.0</td>
-                            <td><span class="green-text">R$${data}/ha</span></td>
+                            <td><span class="green-text">Facilidade</span></td>
                         </tr>
                         <tr>
                             <td><b>Prevenção de doenças e pragas</b></td>
-                            <td>Ao monitorar as condições ambientais, os agricultores podem identificar precocemente sinais de doenças e infestações de pragas, permitindo ação rápida.</td>
-                            <td><span class="green-text">R$${data}/ha</span></td>
+                            <td>Ao monitorar as condições ambientais, você pode identificar precocemente sinais de doenças e infestações de pragas, permitindo ação rápida.</td>
+                            <td><span class="green-text">Saúde</span></td>
                         </tr>
                         <tr>
                             <td><b>Redução do desperdício de recursos</b></td>
                             <td>A capacidade de monitorar de forma precisa as condições da plantação ajuda a evitar o uso excessivo de água e outros recursos, reduzindo custos e impactos ambientais.</td>
-                            <td><span class="green-text">R$${data}/ha</span></td>
+                            <td><span class="green-text">Sustentável</span></td>
                         </tr>
                         <tr>
                             <td><b>Aumento da produtividade</b></td>
                             <td>Uma gestão mais eficaz da plantação, baseada em dados em tempo real, pode levar a um aumento significativo na produtividade da cultura de soja.</td>
-                            <td><span class="green-text">R$${data}/ha</span></td>
+                            <td><span class="green-text">Faturamento</span></td>
                         </tr>
                         <tr>
-                            <td><b>Tomada de decisão informada</b></td>
+                            <td><b>Tomada de decisão concisa</b></td>
                             <td>Os agricultores podem tomar decisões baseadas em dados concretos e precisos, em vez de depender apenas de observações subjetivas.</td>
-                            <td><span class="green-text">R$${data}/ha</span></td>
+                            <td><span class="green-text">Estratégia</span></td>
                         </tr>
                     </table>
                 </div>

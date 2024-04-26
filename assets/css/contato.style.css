@@ -52,7 +52,7 @@
     line-height: 35px;
     width: 100%;
     height: 80px;
-    
+    color: rgb(15, 15, 15);
 }
 .right-contato form{
     width: 100%;
@@ -138,7 +138,6 @@
     display: flex;
     align-self: flex-start;
     justify-self: flex-start;
-    font-weight: lighter;
     font-family: "Covered By Your Grace", cursive;
     color: #e2e87c;
 }

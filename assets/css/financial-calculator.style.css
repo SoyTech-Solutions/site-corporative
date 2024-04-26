@@ -117,7 +117,10 @@ article::after {
 main{
     margin-top: -40px;
     height: 530px;
-    background: rgba(0, 0, 0, 0.26);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0)),
+    url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
