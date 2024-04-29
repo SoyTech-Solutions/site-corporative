@@ -48,9 +48,13 @@
     height: 70px;
     position: absolute;
     bottom: 20px;
-    background-color: #ffffff00;
+    
+    border-radius: 6px;
     font-family: sans-serif;
-    padding: 50px;
+    color: #0000;
+   font-weight: bolder;
+   padding: 20px;
+   
 }
 
 .inner-info-card-servicos h2{
