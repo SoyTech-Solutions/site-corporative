@@ -61,11 +61,8 @@
     line-height: 35px;
     width: 100%;
     height: 80px;
-<<<<<<< HEAD
     color: black;
-=======
-    color: rgb(15, 15, 15);
->>>>>>> 75ac3351cef367f427221b3f9cc98c189a1b2f31
+
 }
 
 .right-contato form {
@@ -108,8 +105,8 @@
 }
 
 .btn-contato>button {
-    font-family: "Azeret Mono", monospace;
-    background-color: #4AAF47;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #4BAF47;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -121,7 +118,7 @@
 }
 
 .btn-contato button:hover {
-    background-color: #347531;
+    background-color: #3b8d38;
 }
 
 .bottom-contato {
