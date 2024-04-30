@@ -1,35 +1,35 @@
-var btnProductivity = document.querySelector('#btn_produtividade'); 
+var btnProductivity = document.querySelector('#btn_produtividade');
 
-btnProductivity.addEventListener('click', function(){ 
-    var totalHectare =   Number(document.querySelector('#txt_qtdHectare').value);
-    var plantsMq =  Number(document.querySelector('#txt_qtdPlantaMq').value);
+btnProductivity.addEventListener('click', function () {
+    var totalHectare = Number(document.querySelector('#txt_qtdHectare').value);
+    var plantsMq = Number(document.querySelector('#txt_qtdPlantaMq').value);
     var podAmountByPlant = Number(document.querySelector('#txt_qtdVagemPlanta').value);
-    var grainAmount =   Number(document.querySelector('#txt_graoVagem').value);
+    var grainAmount = Number(document.querySelector('#txt_graoVagem').value);
     var grainWeight100 = Number(document.querySelector('#txt_peso100graos').value);
 
     var priceBag = Number(document.querySelector('#txt_precoSacas').value);
 
 
     // verificando campos vazios
-    if(totalHectare != '' && plantsMq != '' && podAmountByPlant != '' && grainAmount != '' && grainWeight100 != '' && priceBag != ''){
+    if (totalHectare != '' && plantsMq != '' && podAmountByPlant != '' && grainAmount != '' && grainWeight100 != '' && priceBag != '') {
         //============ CALCULO LÓGICA AQUI ===============
 
         // quantidade de grãos por metro quadrado (plantas x vagens x graos)
         var grainsByMq = plantsMq * podAmountByPlant * grainAmount;
 
         // grãos totais em um hectare (graos total em 1m quadrado x 1000)
-        var grainsByHectare = grainsByMq*1000;
+        var grainsByHectare = grainsByMq * 1000;
 
         // peso dessa "colheita" EM KG - em um unico hectare
         var grainsWeightByHectareG = grainWeight100 * grainsByHectare; // considerando n gramas a cada grãos
 
         // POTENCIAL produtividade (sem perdas)
         var potentialProductivityKgHa = grainsWeightByHectareG / 1000; // convertendo para kg
-        var potentiaProductivityBagHa = potentialProductivityKgHa/60 // considerando sacas de 60kg
+        var potentiaProductivityBagHa = potentialProductivityKgHa / 60 // considerando sacas de 60kg
 
         // REAL produtividade (com perdas)
-        var realProductivityKgHa = potentialProductivityKgHa * ((100-47)/100); // considerando a perda de 47%
-        var realProductivityBagHa = realProductivityKgHa/60;
+        var realProductivityKgHa = potentialProductivityKgHa * ((100 - 47) / 100); // considerando a perda de 47%
+        var realProductivityBagHa = realProductivityKgHa / 60;
 
 
         //============ APRESENTAÇÃO DOS CARDS ===============
@@ -39,11 +39,11 @@ btnProductivity.addEventListener('click', function(){
 
         // === nível do produtor
         var producerStatus;
-        if(realProductivityBagHa < 90){
+        if (realProductivityBagHa < 90) {
             producerStatus = `iniciante`;
-        }else if(realProductivityBagHa< 110){
+        } else if (realProductivityBagHa < 110) {
             producerStatus = `médiano`;
-        }else if(realProductivityBagHa >= 110){
+        } else if (realProductivityBagHa >= 110) {
             producerStatus = 'avançado';
         }
 
@@ -58,40 +58,43 @@ btnProductivity.addEventListener('click', function(){
         // e a frase individual
         var celciusQuality;
         var celciusSentence;
-        var humidityQuality ;
+        var humidityQuality;
         var humiditySentence;
 
-        if(celciusDegree == 0 && humidityPercentage == 0){
+        if (celciusDegree == 0 && humidityPercentage == 0) {
             humidityQuality = false;
             celciusQuality = false;
             grainQuality = 'duvidosa'
             grainQualitySentence = 'Pois não possui um sistema de termometria!'
-        }else{
-            
-            if(celciusDegree < 20 ){
+        } else {
+
+            if (celciusDegree < 20) {
                 celciusQuality = false;
                 celciusSentence = 'Temperatura <b>abaixo do ideal!</b> Deve estar entre 20-30°C';
-            }else if(celciusDegree <= 30){
+            } else if (celciusDegree <= 30) {
                 celciusQuality = true;
                 celciusSentence = 'A temperatura esta <b>perfeita!</b> Entre 20-30°C';
-            }else if(celciusDegree > 30){
+            } else if (celciusDegree > 30) {
                 celciusQuality = false;
                 celciusSentence = 'Temperatura <b>acima do ideal!</b> Deve estar entre 20-30°C';
             }
 
-            if(humidityPercentage == 13){
+            if (humidityPercentage >= 12 && humidityPercentage <= 14.5) {
                 humidityQuality = true;
-                humiditySentence = 'A umidade esta <b>perfeita!</b> Exatamente 13%'
-            }else{
+                humiditySentence = 'A umidade esta <b>boa!</b> entre 12% e 14,5%'
+                if (humidityPercentage == 13) {
+                    humiditySentence = 'A umidade esta <b>perfeita!</b> exatamente 13%'
+                }
+            } else {
                 humidityQuality = false;
-                humiditySentence = 'Umidade <b>não está boa!</b> Deve ser exatamente 13%'
+                humiditySentence = 'Umidade <b>não está boa!</b> Deve estar entre 12% e 14,5%'
             }
 
-            if(humidityQuality == true && celciusQuality == true){
+            if (humidityQuality == true && celciusQuality == true) {
                 grainQuality = 'Ótima'
-            }else if(humidityQuality == true || celciusQuality == true){
+            } else if (humidityQuality == true || celciusQuality == true) {
                 grainQuality = 'Média'
-            }else{
+            } else {
                 grainQuality = 'Baixa'
             }
 
@@ -103,8 +106,8 @@ btnProductivity.addEventListener('click', function(){
 
         // == perda em dinheiro
 
-        var lossProductivityKgHa = potentialProductivityKgHa * ((100-63)/100); // considerando a perda de 47%
-        var lossProductivityMoney = ((lossProductivityKgHa/60) * priceBag ).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); // 
+        var lossProductivityKgHa = potentialProductivityKgHa * ((100 - 63) / 100); // considerando a perda de 47%
+        var lossProductivityMoney = ((lossProductivityKgHa / 60) * priceBag).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); // 
 
         //=================================================
 
@@ -122,7 +125,7 @@ btnProductivity.addEventListener('click', function(){
         dataAnalysisResponse.style.height = '1390px';
 
         // simulando o carregamento (loader)
-        setTimeout(function() {
+        setTimeout(function () {
             modalLoader.style.display = 'none';
         }, 1500); // 1 segundo para tornar o modal invisível denovo
 
@@ -138,7 +141,7 @@ btnProductivity.addEventListener('click', function(){
                     <h2 class="data-info-title">Produtividade</h2>
                     <p class="data-info-text">Total de <b>${realProductivityKgHa.toFixed(1)}kg/ha</b></p>
                     <p class="data-info-text"> cerca de <b>${(realProductivityBagHa).toFixed(1)}sa/ha</b></p>
-                    <p class="data-info-text">O que se traduz para <span class="green-text">${(realProductivityBagHa * priceBag).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} reais</span></p>
+                    <p class="data-info-text">O que se traduz para <span class="green-text">${(realProductivityBagHa * priceBag).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span></p>
                 </div>
                 <div class="col data-col">
                     <img width="48" height="48" src="https://img.icons8.com/fluency/48/bearish.png" alt="bearish"/>   
@@ -158,7 +161,7 @@ btnProductivity.addEventListener('click', function(){
                 <div class="col data-col">
                     <img width="48" height="48" src="https://img.icons8.com/fluency/48/stocks-growth--v1.png" alt="stocks-growth--v1"/>                    
                     <h2 class="data-info-title">Potencial</h2>
-                    <p class="data-info-text">Potêncial de escala em até <span class="green-text">${potentialProductivityKgHa.toFixed(1)}kg/ha</span></p>
+                    <p class="data-info-text">Potencial de escala em até <span class="green-text">${potentialProductivityKgHa.toFixed(1)}kg/ha</span></p>
                     <p class="data-info-text">Podendo aumentar seus ganhos em até <b>47%</b></p>
                 </div>
                 <div class="col data-col">
@@ -170,7 +173,7 @@ btnProductivity.addEventListener('click', function(){
                 <div class="col data-col">
                     <img width="48" height="48" src="https://img.icons8.com/fluency/48/delete-dollar.png" alt="delete-dollar"/>
                     <h2 class="data-info-title">Lucratividade</h2>
-                    <p class="data-info-text">Você esta deixando de ganhar cerca de <span class="red-text">RS${lossProductivityMoney} Reais</span>, de toda sua plantação</p>
+                    <p class="data-info-text">Você está deixando de ganhar cerca de <span class="red-text">${lossProductivityMoney}</span>, de toda sua plantação</p>
                 </div>
             </div>
             <div class="row data-row-last">
@@ -188,7 +191,7 @@ btnProductivity.addEventListener('click', function(){
                         </tr>
                         <tr>
                             <td><b>Monitoramento remoto da plantação</b></td>
-                            <td>Acesso em tempo real às condições de umidade e temperatura da plantação de soja, permitindo uma gestão eficiente mesmo à distância.</td>
+                            <td>Acesso em tempo real as condições de umidade e temperatura da plantação de soja, permitindo uma gestão eficiente mesmo à distância.</td>
                             <td><span class="green-text">Facilidade</span></td>
                         </tr>
                         <tr>
@@ -223,8 +226,8 @@ btnProductivity.addEventListener('click', function(){
                 </div>
             </div>
         `
-        
-    }else{
+
+    } else {
         alert('Há campos vazios. Preencha todos para calcular!');
     }
 })
