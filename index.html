@@ -405,27 +405,91 @@
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div class="right-contato">
                     <h2>Contate-nos</h2>
+=======
+                <div id="primeiraTela" class="right-contato">
+                    <h2>Contate nos</h2>
+>>>>>>> 6264099e531cb545cff317765a2c9f3f2be63b25
                     <h1>Entre em contato conosco!</h1>
                     <form>
                         <div class="row-contato">
-                            <input type="text" placeholder="Representante">
-                            <input type="text" placeholder="Empresa">
+                            <input id="input_nomeRepresentante" placeholder="Representante">
+                            <input id="input_razao" placeholder="Empresa">
                         </div>
                         <div class="row-contato">
-                            <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Telefone">
+                            <input id="input_email" placeholder="Email">
+                            <input id="input_telefone" placeholder="Telefone">
                         </div>
                         <div class="row-contato">
-                            <textarea placeholder="Escreva uma mensagem"></textarea>
+                            <textarea id="textarea_descricao" placeholder="Escreva uma mensagem"></textarea>
                         </div>
                         <div class="btn-contato">
-                            <button>Enviar </button>
+                            <button onclick="enviar()" type="button">Enviar Solicitação</button>
                         </div>
                     </form>
                 </div>
             </div>
+            <script>
+                function enviar() {
+                    // declaração de variáveis
+                    const representante = input_nomeRepresentante.value;
+                    const emailCliente = input_email.value;
+                    const descricao = textarea_descricao.value;
+                    const telefone = Number(input_telefone.value)
+                    const razaoSocial = input_razao.value
+
+                    // validação de qtd de caracteres
+                    let qtdEmpresa = razaoSocial.length;
+                    let qtdnumerosTelefone = telefone.length;
+                    let qtdNome = representante.length;
+                    let qtdletrasEmail = emailCliente.length;
+                    let qtdletrasDescricao = descricao.length;
+                    let caractereArroba = emailCliente.indexOf("@")
+                    let caracterePonto = emailCliente.indexOf(".")
+
+                    if (qtdNome == "" || qtdEmpresa == "" || qtdletrasEmail == "" || qtdletrasDescricao == "") {
+                        alert(`Preencha os campos`)
+                    } else {
+
+                        // validação e mensagem de erro
+                        if (!(qtdNome <= 0 || qtdNome > 45)) {
+                            if (!(qtdEmpresa <= 0 || qtdEmpresa > 100)) {
+                                if (!(qtdletrasEmail <= 0)) {
+                                    if (caractereArroba > 0 && caracterePonto > 0) {
+                                        if (!(qtdnumerosTelefone <= 10 || qtdnumerosTelefone > 14)) {
+                                            if (!(qtdletrasDescricao <= 0 || qtdletrasDescricao > 500)) {
+
+                                                primeiraTela.innerHTML = `
+                                                <h1 id="contatoTela2">Solicitação enviada com sucesso!</h1><br>
+                                                <div class="verified-img">
+                                                    <img src="./assets/icon/icons8-aprovação-50.png" alt="">
+                                                    </div>
+                                                    `
+                                                    
+                                            } else {
+                                                alert("Descrição inválida. Deve ter no máximo 500 caracteres.");
+                                            }
+                                        } else {
+                                            alert("Telefone inválido. Deve ter entre 10 e 13 dígitos (considerando DDD).");
+                                        }
+                                    } else {
+                                        alert(`E-mail inválido`)
+                                    }
+                                } else {
+                                    alert("Informe o endereço de e-mail.");
+                                }
+                            } else {
+                                alert("Razão social inválida. Deve ter entre 1 e 100 caracteres.");
+                            }
+                        } else {
+                            alert("Nome da empresa inválido. Deve ter entre 1 e 45 caracteres.");
+                        }
+                    }
+
+                }
+            </script>
             <div class="bottom-contato">
                 <div class="card-contato">
                     <h1 id="soytech">SoyTech</h1>

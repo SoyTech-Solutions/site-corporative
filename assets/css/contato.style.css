@@ -2,70 +2,78 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Covered+By+Your+Grace&family=Nabla&display=swap');
 
-.contato-container{
+.contato-container {
     width: 100%;
     height: 770px;
     padding-top: 20px;
     background-color: #F8F7F1;
 }
-.inner-contato{
+
+.inner-contato {
     width: 70%;
     height: 100%;
     margin: 0 auto;
 }
-.top-contato{
+
+.top-contato {
     background-color: aqua;
     width: 100%;
     height: 450px;
     display: flex;
     flex-direction: row;
 }
-.left-contato, .right-contato{
+
+.left-contato,
+.right-contato {
     width: 50%;
     height: 100%;
 }
-.left-contato{
+
+.left-contato {
     background-color: #F8F8F0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.img-contato{
+
+.img-contato {
     width: 98%;
     height: 98%;
     background-color: #F8F8F0;
     border-radius: 8px;
 }
-.right-contato{
+
+.right-contato {
     background-color: #F8F8F0;
 }
-.right-contato h2{
+
+.right-contato h2 {
     font-weight: lighter;
-    color: rgb(75,175,71);
+    color: rgb(75, 175, 71);
     font-size: 16px;
     font-family: 'Covered By Your Grace';
     text-align: start;
 }
-.right-contato h1{
+
+.right-contato h1 {
     font-size: 35px;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     line-height: 35px;
     width: 100%;
     height: 80px;
-<<<<<<< HEAD
     color: black;
-=======
-    color: rgb(15, 15, 15);
->>>>>>> 75ac3351cef367f427221b3f9cc98c189a1b2f31
+
 }
-.right-contato form{
+
+.right-contato form {
     width: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.row-contato{
+
+.row-contato {
     border: 1px solid transparent;
     border-radius: 5px;
     width: 100%;
@@ -74,16 +82,19 @@
     gap: 5px;
     flex-direction: row;
 }
-.row-contato:nth-child(3){
+
+.row-contato:nth-child(3) {
     height: 170px;
 }
-.row-contato input{
+
+.row-contato input {
     border: 1px solid transparent;
     padding: 15px;
     border-radius: 5px;
     width: 50%;
 }
-.row-contato textarea{
+
+.row-contato textarea {
     width: 100%;
     font-family: "Azeret Mono", monospace;
     height: 100%;
@@ -93,9 +104,9 @@
     border-radius: 8px;
 }
 
-.btn-contato > button{
-    font-family: "Azeret Mono", monospace;
-    background-color: #4AAF47;
+.btn-contato>button {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #4BAF47;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -106,24 +117,24 @@
 
 }
 
-.btn-contato button:hover{
-    background-color: #347531;
+.btn-contato button:hover {
+    background-color: #3b8d38;
 }
 
-.bottom-contato{
+.bottom-contato {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-#soytech2{
-    
+#soytech2 {
+
     color: #fff;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-#soytech{
+#soytech {
     margin: 20px 0 10px 00px;
     padding-left: 20px;
     font-size: 25px;
@@ -135,18 +146,19 @@
     color: #91d487;
 }
 
-#contato{
+#contato {
     margin: 20px 0 10px 0px;
     font-size: 25px;
     padding-left: 20px;
     display: flex;
     align-self: flex-start;
     justify-self: flex-start;
+    font-weight: lighter;
     font-family: "Covered By Your Grace", cursive;
     color: #e2e87c;
 }
 
-#endereco{
+#endereco {
     margin: 20px 0 10px 0px;
     font-size: 25px;
     padding-left: 20px;
@@ -157,33 +169,62 @@
     font-family: "Covered By Your Grace", cursive;
     color: #F0E0A2;
 }
-.card-contato{
+
+.card-contato {
     width: 300px;
     height: 200px;
-    background-color: #ffbb00; 
+    background-color: #ffbb00;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
 
 }
-.card-contato:nth-child(1){
+
+.card-contato:nth-child(1) {
     background-color: #056b00;
 }
 
-.card-contato:nth-child(2){
+.card-contato:nth-child(2) {
     background-color: #a0a900;
 }
-.info-card-contato p{
+
+.info-card-contato p {
     font-size: 14px;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     width: 90%;
     font-weight: 500;
     margin: 0 0 0 20px;
 }
-.iframe-maps{
+
+.iframe-maps {
     border: 1px solid rgb(199, 199, 199);
 }
- .row-contato > textarea:focus, input:focus{
+
+.row-contato>textarea:focus,
+input:focus {
     outline: none;
     border: 1px solid rgb(0, 167, 56);
+}
+
+#contatoTela2 {
+    transform: translateY(25px);
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    width: 100%;
+    height: 80px;
+    color: rgb(15, 15, 15);
+}
+
+.verified-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.verified-img img{
+    height: 300px;
+    width: 300px;
 }
