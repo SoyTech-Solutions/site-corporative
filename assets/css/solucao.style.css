@@ -32,29 +32,63 @@
     justify-content: space-between;
     margin-top: 40px;
 }
-.solucao-card{
-    width: 220px;
+.solucao-card1{
+    width: 230px;
     height: 350px;
-    
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    background-image: url('../img/dispositivos-inteligentes-510x392.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.solucao-card2{
+    width: 230px;
+    height: 350px;
     border-radius: 10px;
     position: relative;
     display: flex;
     justify-content: center;
-    object-fit: cover;
+    background-image: url('../img/higrometro_medidor_temperatura_e_umidade_extensao_de_cilios_301_1_4d946e008d10582efd7c49e7ac19408b.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.solucao-card3{
+    width: 230px;
+    height: 350px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/armazenamento-em-nuvem-e-tendencia-para-2024-1170x700.png');
+    background-size: cover;
+    background-position: center;
+}
+.solucao-card4{
+    width: 230px;
+    height: 350px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/23.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .inner-solucao-card{
-    width: 190px;
+    width: 200px;
     height: 70px;
     position: absolute;
     bottom: 20px;
-    
     border-radius: 6px;
     font-family: sans-serif;
-    color: #0000;
+    color: #ffffff;
    font-weight: bolder;
    padding: 20px;
-   
+   align-items: center;
+   justify-content: center;
 }
 
 .inner-info-card-servicos h2{
@@ -63,3 +97,5 @@
     font-weight: bolder;
     line-height: 17px;
 }
+
+
