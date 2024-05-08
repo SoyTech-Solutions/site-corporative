@@ -156,11 +156,6 @@ main{
     margin-bottom: 10px;
 }
 .response-subtext{
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 90px;
-    margin-right: 90px;
     font-family: 'poppins', sans-serif;
     text-align: center;
     font-size: 16px;
@@ -179,7 +174,7 @@ main{
     border-radius: 10px;
     margin-bottom: 100px;
     box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.103);
-    padding: 25px;
+    padding: 0px;
 }
 
 .analysis-title{

@@ -122,7 +122,9 @@ btnProductivity.addEventListener('click', function () {
 
         // aumentando a altura dos containers
         responseContainer.style.height = '1990px';
+        dataAnalysisResponse.style.padding = '25px';
         dataAnalysisResponse.style.height = '1390px';
+
 
         // simulando o carregamento (loader)
         setTimeout(function () {
