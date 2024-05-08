@@ -156,6 +156,11 @@ main{
     margin-bottom: 10px;
 }
 .response-subtext{
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-right: 90px;
     font-family: 'poppins', sans-serif;
     text-align: center;
     font-size: 16px;
