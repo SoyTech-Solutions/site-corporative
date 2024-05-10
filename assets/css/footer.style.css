@@ -144,6 +144,7 @@
 .inner-copy span, .inner-copy a{
     text-decoration: none;
     color: rgb(107, 107, 107);
+    text-decoration: none;
 }
 
 hr {
@@ -157,6 +158,7 @@ hr {
 
 .ImgIconFooter{
     height: 16px;
+    text-decoration: none;
 }
 
 .inner-card h3{

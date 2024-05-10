@@ -61,11 +61,11 @@ btnProductivity.addEventListener('click', function () {
         var humidityQuality;
         var humiditySentence;
 
-        if (celciusDegree == 0 && humidityPercentage == 0) {
+        if (celciusDegree == 0 || humidityPercentage == 0) {
             humidityQuality = false;
             celciusQuality = false;
             grainQuality = 'duvidosa'
-            grainQualitySentence = 'Pois não possui um sistema de termometria!'
+            grainQualitySentence = 'Pois não possui um sistema de termometria e/ou umidade!'
         } else {
 
             if (celciusDegree < 20) {
