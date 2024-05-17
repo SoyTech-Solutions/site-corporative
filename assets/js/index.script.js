@@ -60,6 +60,17 @@ btnProductivity.addEventListener('click', function () {
         var celciusSentence;
         var humidityQuality;
         var humiditySentence;
+        var celciusLoss = 0
+        var humidityLoss = 0
+        
+
+        // Adicionando as perdas se caso a umidade ou a temperatura não forem adequadas
+        if(celciusDegree < 20 || celciusDegree > 30){
+            celciusLoss = 0.3; 
+        }
+        if(humidityPercentage < 12 || humidityPercentage > 14.5){
+            humidityLoss = 0.4;
+        }
 
         if (celciusDegree == 0 || humidityPercentage == 0) {
             humidityQuality = false;
@@ -106,7 +117,7 @@ btnProductivity.addEventListener('click', function () {
 
         // == perda em dinheiro
 
-        var lossProductivityKgHa = potentialProductivityKgHa * ((100 - 63) / 100); // considerando a perda de 47%
+        var lossProductivityKgHa = potentialProductivityKgHa * (1 - 0.63); // considerando a perda 47%
         var lossProductivityMoney = ((lossProductivityKgHa / 60) * priceBag).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); // 
 
         //=================================================
